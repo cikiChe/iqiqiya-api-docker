@@ -5,6 +5,6 @@ COPY code.sh /code.sh
 
 RUN set -x; chmod +x /code.sh 
 
-# CMD [  "/code.sh" ]
+CMD [  "/code.sh" ]
 
 
