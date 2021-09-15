@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  iqiqiya:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    # volumes: 
+    #   - ./config/nginx.conf:/etc/nginx/nginx.conf
+    #   - ./config/conf.d:/etc/nginx/conf.d
+    #   - ./config/ssl:/etc/nginx/ssl
+    ports:
+      - "80:80"
+      - "443:443"
+    container_name: iqiqiya
+    restart: always
+    networks:
+      - default
+    stdin_open: true
+    tty: true
