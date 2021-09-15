@@ -7,4 +7,4 @@ RUN set -x; chmod +x /code.sh
 
 # ENTRYPOINT [ "sh", "/code.sh" ]
 
-CMD ["/usr/sbin/init"]
+# CMD ["/usr/sbin/init"]
