@@ -4,8 +4,9 @@ LABEL maintainer="466934322@qq.com"
 RUN apt-get update \
   && apt-get install -y nginx git  zip libzip-dev \
   && docker-php-ext-configure zip --with-libzip \
-  && docker-php-ext-install zip \
-  rename 's/docker.conf/docker.conf.bak/' /usr/local/etc/php-fpm.d/*docker.conf
+  && docker-php-ext-install zip 
+
+RUN  rename 's/docker.conf/docker.conf.bak/' /usr/local/etc/php-fpm.d/*docker.conf
 
 COPY code.sh /code.sh
 
