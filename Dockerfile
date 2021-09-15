@@ -1,4 +1,4 @@
-FROM php:7.3.30-fpm 
+FROM php:7.3-fpm-alpine3.13
 LABEL maintainer="466934322@qq.com"
 
 RUN apk --update --no-cache add nginx git unzip wget curl-dev libcurl && \
