@@ -18,6 +18,4 @@ services:
     networks:
       - default
     stdin_open: true
-    extra_hosts:
-      - "localhost"
     tty: true
