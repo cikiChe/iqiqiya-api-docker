@@ -5,6 +5,7 @@ COPY code.sh /code.sh
 
 RUN set -x; chmod +x /code.sh 
 
-# ENTRYPOINT [ "sh", "/code.sh" ]
+ENTRYPOINT [ "sh", "/code.sh" ]
 
-# CMD ["/usr/sbin/init"]
+CMD ["/usr/sbin/nginx"]
+
