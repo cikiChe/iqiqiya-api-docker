@@ -8,4 +8,4 @@ git clone https://github.com/iqiqiya/iqiqiya-API.git
 
 
 #/usr/sbin/nginx
-nginx 
+nginx && php-fpm
