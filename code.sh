@@ -3,7 +3,8 @@ set -e
 
 cd /var/www/html
 
-git clone https://github.com/iqiqiya/iqiqiya-API.git ./iqiqiya
+mkdir iqiqiya
+git clone https://github.com/iqiqiya/iqiqiya-API.git iqiqiya
 
 
 chown -R www-data:www-data iqiqiya
