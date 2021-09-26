@@ -1,1 +1,1 @@
-pleases delete this repo 
+please delete this repo 
